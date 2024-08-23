@@ -1,11 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rinterio</title>
+
+    <!-- setting manrope font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <style>
+        .manrope-normal {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+    </style>
+
+    <!-- setting tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'btn-bg': '#ABEF5F',
+              },
+            },
+          },
+        }
+      </script>
+
+      <!-- setting daisy-UI -->
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+      <script src="https://cdn.tailwindcss.com"></script>
+
+      <!-- setting font-awesome -->
+      <script src="https://kit.fontawesome.com/08ef0f681f.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    
+
+<body class="manrope-normal">
+    <header class="my-10">
+        <nav>
+            <div class="navbar">
+                <div class="navbar-start flex">
+                  
+                  
+                    <button class="btn w-[50px] bg-green-400 border-none rounded-[50%]"><i class="fa-solid fa-arrow-right text-black text-[30px] -rotate-45"></i></button>
+                
+                <h1 class="text-black font-extrabold ml-[10px] text-[32px]">Renetrion</h1>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a class="font-extrabold text-gray-600 text-base">Home</a></li>
+                    <li><a class="font-normal text-gray-500 text-base"> Services</a></li>
+                    <li><a class="font-normal text-gray-500 text-base">Portfolio</a></li>
+                    <li><a class="font-normal text-gray-500 text-base"> Blogs</a></li>
+                    <li><a class="font-normal text-gray-500 text-base">Contact Us</a></li>
+                </ul>
+                </div>
+                <div class="navbar-end">
+                    <div class="hidden lg:flex lg:gap-5 items-center">
+                        <a class="btn rounded-[50%] w-[50px]  bg-white"><i class="fa-solid fa-magnifying-glass text-[20px]"></i></a> 
+                    <a class="btn rounded-[50%] w-[50px] bg-white"><i class="fa-solid fa-cart-shopping text-[20px]"></i></a>
+                    <div class="flex items-center justify-center gap-3 bg-green-400  rounded-[42px] p-[15px]">
+                        <h1 class="font-extrabold text-black text-[20px]">Book Consult</h1>
+                        <button class="btn  bg-black border-none  rounded-[50%]"><i class="fa-solid fa-arrow-right text-white  -rotate-45"></i></button>
+                    </div>
+                    </div>
+                    
+                     <div class="dropdown lg:hidden">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-horizontal px-1 dropdown-content bg-base-100 rounded-box  mt-3  p-2 shadow">
+                      <li><a>Home</a></li>
+                      <li>
+                        <a>Services</a>
+                      </li>
+                      <li><a>Search</a></li>
+                      <li><a>Cart</a></li>
+                      <li><a>Profile</a></li>
+                      <li><a>Portfolio</a></li>
+                      <li><a>Blogs</a></li>
+                      <li><a>Contact Us</a></li>
+                      
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        </nav>
+    </header>
 </body>
 </html>
