@@ -43,7 +43,7 @@
 </head>
 
 <body class="manrope-normal">
-    <header class="my-10">
+    <header class="my-10 mx-[10px] lg:mx-[120px] px-1">
         <nav>
             <div class="navbar">
                 <div class="navbar-start flex">
@@ -53,7 +53,7 @@
                 
                 <h1 class="text-black font-extrabold ml-[10px] text-[32px]">Renetrion</h1>
                 </div>
-                <div class="navbar-center hidden lg:flex">
+                <div class="navbar-center hidden lg:flex md:hidden">
                   <ul class="menu menu-horizontal px-1">
                     <li><a class="font-extrabold text-gray-600 text-base">Home</a></li>
                     <li><a class="font-normal text-gray-500 text-base"> Services</a></li>
@@ -72,8 +72,8 @@
                     </div>
                     </div>
                     
-                     <div class="dropdown lg:hidden">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                     <div class="dropdown dropdown-end lg:hidden mr-2 ">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden border-inherit rounded-full">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         class="h-5 w-5"
@@ -106,6 +106,19 @@
                 </div>
               </div>
         </nav>
+        <div class="text-center">
+          <!-- banner Image -->
+           <div class="flex justify-center items-center">
+            <img src="./assets/banner.png" alt="banner" class="center">
+           </div>
+           <!-- banner texts and button -->
+            <div class="text-center">
+              <h1 class="font-extrabold text-black text-[64px] w">A barn house of this design  has a striking appearance</h1>
+              <p class="font-medium text-gray-500 text-[16px] box-content w-[80%] mx-auto my-5">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+              <div class="btn bg-green-200 w-[100%] lg:w-fit rounded-[32px] px-10 h-[70px]"><span class="font-bold text-black text-[20px]">View Details</span><button class="btn bg-green-400 border-none rounded-full"><i class="fa-solid fa-arrow-right text-black  -rotate-45"></i></button></div>
+            </div>
+
+        </div>
     </header>
 </body>
 </html>
